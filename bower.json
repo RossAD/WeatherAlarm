@@ -1,0 +1,30 @@
+{
+  "name": "WeatherAlarm",
+  "homepage": "https://github.com/RossAD/WeatherAlarm",
+  "authors": [
+    "Ross Davis <Ross.ad@gmail.com>"
+  ],
+  "description": "Scheduleing App with weather alerts",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "weather",
+    "alarm",
+    "AngularJS",
+    "mongoDB",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
