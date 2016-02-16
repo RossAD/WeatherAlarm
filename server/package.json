@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for weather Alarm application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RossAD/WeatherAlarm.git"
+  },
+  "keywords": [
+    "weather",
+    "alarm"
+  ],
+  "author": "Ross Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RossAD/WeatherAlarm/issues"
+  },
+  "homepage": "https://github.com/RossAD/WeatherAlarm#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.7",
+    "mongoose": "^4.4.3"
+  }
+}

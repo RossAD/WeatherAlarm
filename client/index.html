@@ -1,21 +1,25 @@
-<!DOCTYPE <!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-  <title>Weather Alarm</title>
-</head>
-<body  ng-app='WeatherAlarm'>
-  <h1>Weather Alarm</h1>
-  <div ng-controller="AlarmController">
-    <div class='alarms' ng-repeat="alarm in alarms">
-      <alarm-Info info='alarms'>{{alarm}}</alarm-Info>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>Weather Alarm</title>
+  </head>
+  <body  ng-app='WeatherAlarm'>
+    <h1>Weather Alarm</h1>
+    <div ng-controller="AlarmController">
+      <div class='alarms' ng-repeat="alarm in alarms">
+      <alarmInfo info='alarm'>
+        <h2 class='title'>{{ alarm.title }}</h2>
+        <p class='time'>{{ alarm.time }}</p>
+        <p class='date'>{{ alarm.date }}</p>
+      </alarmInfo>
+      </div>
     </div>
-  </div>
-  <script type="text/javascript" src="app/app.js"></script>
-  <script type="text/javascript" src="app/services/services.js"></script>
-  <script type="text/javascript" src="app/controllers/mainController.js"></script>
-  <script type="text/javascript" src="app/directives/alarmInfo.js"></script>
-</body>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/services/services.js"></script>
+    <script type="text/javascript" src="app/controllers/mainController.js"></script>
+    <script type="text/javascript" src="app/directives/alarmInfo.js"></script>
+  </body>
 </html>
