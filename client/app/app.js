@@ -1,3 +1,1 @@
-angular.module('weatherAlarm',[
-  'weatherAlarm.services',
-  ]);
+var app = angular.module('WeatherAlarm',[]);

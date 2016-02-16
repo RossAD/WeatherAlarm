@@ -1,4 +1,4 @@
-angular.module('weatherAlarm.services', [])
+angular.module('WeatherAlarm.services', [])
 .factory('Events', function($http){
   // Get all scheduled events
   var getAll = function(){
