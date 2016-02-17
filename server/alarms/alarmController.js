@@ -20,18 +20,20 @@ exports.createAlarm = function(req, res, next){
     if(err){
       console.log('You got an Error: ', err);
     } else {
-      res.json('Alarm Saved!', data);
+      res.status(202).json(data); 
     }
 
   });
 };
 
 exports.getAlarm = function(req, res, next){
+  console.log('Get alarm on server: ', req.body);
   Alarm.find(function(err, alarms){
     if(err){
       console.log('You recieved an Error:', err);
     } else {
-      res.send(200, alarms);
+      // res.send(200, alarms);
+      res.status(200).send(alarms);
     }
   });
 };

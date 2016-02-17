@@ -9,9 +9,9 @@ angular.module('alarms.list', [])
       console.log('Inside AlarmsController: ', data);
       $scope.data.alarms = data;
     });
-  $scope.linkFresh = function(){
-    $window.location.reload();
-  };
+  // $scope.linkFresh = function(){
+  //   $window.location.reload();
+  // };
   // $scope.redirectUrl = function(url){
   //   $window.open(url, '__blank');
   // };

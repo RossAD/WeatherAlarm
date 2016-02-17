@@ -1,10 +1,12 @@
 <div id='Alarms' ng-controller="AlarmListController">
   <h2>Current Events</h2>
-  <div class='alarms' ng-repeat="alarm in data.alarms">
+  <div class='alarms' ng-repeat="alarm in data.alarms | orderBy: reverse">
     <alarmInfo info='alarm'>
-      <h2 class='title'>{{ alarm.title }}</h2>
-      <p class='time'>{{ alarm.time }}</p>
-      <p class='date'>{{ alarm.date }}</p>
+      <h2 class='title'>Title:  {{ alarm.label }}</h2>
+      <p class='time'>Time:  {{ alarm.time }}</p>
+      <p class='date'>Date:  {{ alarm.date }}</p>
+      <p class='zip'>Zip Code:  {{alarm.zip }}</p>
+      <p class='outside'>Outside?  {{ alarm.inOut }}</p>
     </alarmInfo>
   </div>
 </div>

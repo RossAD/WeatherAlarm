@@ -2,8 +2,9 @@ var mongoose = require('mongoose');
 
 var AlarmSchema = new mongoose.Schema({
   label: String,
-  time: String,
+  time: Number,
   date: Date,
+  zip: Number,
   inOut: Boolean
 });
 

@@ -5,11 +5,12 @@ var app = express.Router();
 console.log('Inside router');
 module.exports = function (app, express) {
   app.post('/alarms/', alarmController.createAlarm);
+  console.log(typeof alarmController.getAlarm);
   app.get('/alarms/', alarmController.getAlarm);
   // app.get('/', console.log("Success request!"));
-  app.get('/', function(req, res) {
-    console.log('server request', req.body);
-    res.json({ message: 'hooray! welcome to our api!'});   
-});
+  // app.get('/', function(req, res) {
+  //   console.log('server request', req.body);
+  //   res.json({ message: 'hooray! welcome to our api!'});   
+// });
 // app.use('/api', app);
 };

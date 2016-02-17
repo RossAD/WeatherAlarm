@@ -4,12 +4,13 @@
     <form>
       <h2>Alarm Properties</h2>
       <ul>
-        <p>Label<input ng-model='addLabel'></input></p>
-        <p>Time<input ng-model='addTime'></input></p>
-        <p>Date<input ng-model='addDate'></input></p>
-        <p>Outside?<input type:'checkbox' ng-model='outside'></p>
+        <p>Label: <input ng-model='addLabel'></input></p>
+        <p>Time: <input ng-model='addTime'></input></p>
+        <p>Date: <input ng-model='addDate'></input></p>
+        <p>Zip Code: <input ng-model='addZip'></input></p>
+        <p>Outside?: <input type:'checkbox' ng-model='outside'></p>
       </ul>
     </form>
-    <button ng-click="addAlarm(); submitted='Submitted New Alarm';">Submit</button>
+    <button ng-click="addAlarm();">Submit</button>
   </div>
 </div>
