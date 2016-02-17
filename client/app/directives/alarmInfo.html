@@ -1,3 +1,10 @@
-<h2 class='title'>{{ info.title }}</h2>
-<p class='time'>{{ info.time }}</p>
-<p class='date'>{{ info.date }}</p>
+<div id='Alarms' ng-controller="AlarmListController">
+  <h2>Current Events</h2>
+  <div class='alarms' ng-repeat="alarm in data.alarms">
+    <alarmInfo info='alarm'>
+      <h2 class='title'>{{ alarm.title }}</h2>
+      <p class='time'>{{ alarm.time }}</p>
+      <p class='date'>{{ alarm.date }}</p>
+    </alarmInfo>
+  </div>
+</div>

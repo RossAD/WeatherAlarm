@@ -1,17 +1,10 @@
 var mongoose = require('mongoose');
 
-var alarmSchema = new mongoose.Schema({
-  label: {
-    type: String,
-  },
-  time: {
-    type: String,
-  },
-  date: {
-    type: Date,
-  },
-  inOut: {
-    type: Boolean,
-  }
+var AlarmSchema = new mongoose.Schema({
+  label: String,
+  time: String,
+  date: Date,
+  inOut: Boolean
 });
 
+module.exports = mongoose.model('alarm', AlarmSchema);

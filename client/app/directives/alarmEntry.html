@@ -1,0 +1,15 @@
+<div id='addAlarm' ng-controller="AlarmEntryController">
+  <h1>Enter New Event</h1>
+  <div class='newEvent'>
+    <form>
+      <h2>Alarm Properties</h2>
+      <ul>
+        <p>Label<input ng-model='addLabel'></input></p>
+        <p>Time<input ng-model='addTime'></input></p>
+        <p>Date<input ng-model='addDate'></input></p>
+        <p>Outside?<input type:'checkbox' ng-model='outside'></p>
+      </ul>
+    </form>
+    <button ng-click="addAlarm(); submitted='Submitted New Alarm';">Submit</button>
+  </div>
+</div>
